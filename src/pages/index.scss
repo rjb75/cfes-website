@@ -1,0 +1,57 @@
+@import "../styles//colors.scss";
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    @media screen and (min-width: 1920px) {
+       align-items: center; 
+    }
+    margin: 3em 2em;
+    .website-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+        @media screen and (min-width: 1920px) {
+            width: 1920px;
+         }
+        .website-header {
+            display: flex;
+            .logo {
+                max-width: 500px;
+                width: 100%;
+            }
+        }
+        .website-message {
+            .quick-resources {
+                padding-left: 0;
+                >li {
+                    list-style: none;
+                }
+            }
+        }
+        .website-resources {
+            margin-top: auto;
+            bottom: 0;
+            display: flex;
+            font-size: 0.8em;
+            gap: 1em;
+            @media screen and (max-width: 850px) {
+                flex-direction: column-reverse;
+            }
+            .calls-to-action {
+                width: 70%;
+            }
+            .resource-links {
+                width: 30%;
+                .resource-list {
+                    padding-left: 0;
+                    >li {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
