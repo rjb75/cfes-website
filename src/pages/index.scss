@@ -18,6 +18,8 @@
          }
         .website-header {
             display: flex;
+            flex-direction: column;
+            gap: 1em;
             .logo {
                 max-width: 500px;
                 width: 100%;
