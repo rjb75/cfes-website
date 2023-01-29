@@ -56,7 +56,6 @@ const IndexPage: React.FC<PageProps> = () => {
           </ul>
           <p>
             <Trans i18nKey={"contact-link"}>
-              {" "}
               <a href="mailto:vpc@cfes.ca">vpc@cfes.ca</a>
             </Trans>
           </p>
